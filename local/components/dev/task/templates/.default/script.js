@@ -11,7 +11,7 @@ $(document).ready(function () {
         }
 
         $(this).parent('.task-vote').find('.vote-value').text(value);
-        $.post("/local/components/dev/task/templates/.default/vote.php",
+        $.post("/handler/vote.php",
         {
             PROP: prop,
             ID: id,
